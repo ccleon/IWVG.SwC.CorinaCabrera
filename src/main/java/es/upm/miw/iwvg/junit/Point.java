@@ -30,6 +30,11 @@ public class Point {
         this.y -= origin.getY();
     }
     
+    public void reset(){
+    	this.x = 0;
+    	this.y = 0;
+    }
+    
     public int getX() {
         return this.x;
     }
