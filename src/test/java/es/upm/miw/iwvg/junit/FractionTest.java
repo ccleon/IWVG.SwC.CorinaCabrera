@@ -63,5 +63,12 @@ public class FractionTest {
     	f2.esPropia();
     	assertEquals("No, es impropia".trim(), outContent.toString().trim());
     }
+    
+    @Test
+    public void compareFractions(){
+    	assertEquals("Es mayor", Fraction.compareFractions(new Fraction(2,1), new Fraction(1,1)));
+    	assertEquals("Es menor", Fraction.compareFractions(new Fraction(1,1), new Fraction(2,2)));
+    	assertEquals("Es igual", Fraction.compareFractions(new Fraction(1,1), new Fraction(1,1))); 	
+    }
 
 }

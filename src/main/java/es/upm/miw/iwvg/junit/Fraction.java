@@ -35,38 +35,49 @@ package es.upm.miw.iwvg.junit;
  * 
  */
 public class Fraction {
-    
-    private int numerator;
 
-    private int denominator;
+	private int numerator;
 
-    public Fraction(int numerator, int denominator) {
-        this.numerator = numerator;
-        this.denominator = denominator;
-    }
+	private int denominator;
 
-    public Fraction() {
-        this(1, 1);
-    }
+	public Fraction(int numerator, int denominator) {
+		this.numerator = numerator;
+		this.denominator = denominator;
+	}
 
-    public double decimal() {
-        return (double) numerator / denominator;
-    }
-    
-    public int getNumerator() {
-        return numerator;
-    }
+	public Fraction() {
+		this(1, 1);
+	}
 
-    public int getDenominator() {
-        return denominator;
-    }
-    
-    public void esPropia() {
-        if(this.numerator > this.denominator){
-        	System.out.println("No, es impropia");
-        }else{
-        	System.out.println("Si, es propia");
-        }
-    }
+	public double decimal() {
+		return (double) numerator / denominator;
+	}
+
+	public int getNumerator() {
+		return numerator;
+	}
+
+	public int getDenominator() {
+		return denominator;
+	}
+
+	public void esPropia() {
+		if (this.numerator > this.denominator) {
+			System.out.println("No, es impropia");
+		} else {
+			System.out.println("Si, es propia");
+		}
+	}
+
+	public static String compareFractions(Fraction a, Fraction b) {
+		String message = "";
+		if (a.getNumerator() > b.getDenominator())
+			message = "Es mayor";
+		else if (a.getNumerator() < b.getDenominator())
+			message = "Es menor";
+		else
+			message = "Es igual";
+		return message;
+	}
 
 }
