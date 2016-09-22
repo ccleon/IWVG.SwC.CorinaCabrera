@@ -61,4 +61,12 @@ public class Fraction {
         return denominator;
     }
     
+    public void esPropia() {
+        if(this.numerator > this.denominator){
+        	System.out.println("No, es impropia");
+        }else{
+        	System.out.println("Si, es propia");
+        }
+    }
+
 }
