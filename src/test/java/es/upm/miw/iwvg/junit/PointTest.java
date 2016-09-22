@@ -49,5 +49,12 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    @Test
+    public void testReset() {
+        this.pt.reset();
+        assertEquals(0, pt.getX());
+        assertEquals(0, pt.getY());
+    }
 
 }
