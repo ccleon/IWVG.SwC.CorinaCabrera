@@ -1,10 +1,10 @@
 @echo off
 :: Con :: se establecen comentarios
 ::set se definen variables
-set workspace=C:\DatosJBB\WorkSpaces\Luna\IWVG.Maven
+set workspace=C:\Users\bn0415\Desktop\workspace\IWVG.SwC.CorinaCabrera
 ::Las variables de entorno se pueden configurar directamente en Windows cuando se tienen los permisos necesarios
-set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_65
-set M2_HOME=C:\Archivos_de_programa\apache-maven-3.3.3
+set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_51
+set M2_HOME=C:\Users\bn0415\Desktop\Archivos de programa\apache-maven-3.3.9
 :: %var% se accede a una variable
 set PATH=%PATH%;%JAVA_HOME%\bin;%M2_HOME%\bin
 ::echo saca por pantalla un mensaje
