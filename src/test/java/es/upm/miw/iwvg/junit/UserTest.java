@@ -29,4 +29,10 @@ public class UserTest {
     public void testInitials() {
        assertEquals("P.", u.initials());
     }
+    
+    @Test
+    public void testToFirstLowerCase(){
+    	User user = new User(31564, "Javier", "Reyes");
+    	assertEquals("jAVIER", user.toFirstLowerCase());	
+    }
 }
