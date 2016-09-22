@@ -36,5 +36,19 @@ public class DecimalCollection {
         }
         return higher;
     }
-
+    
+    public DecimalCollection getNumbersLowerThan(){
+    	DecimalCollection result = new DecimalCollection();
+    	
+    	for (double item : this.collection) {
+            if (item < 1.5) {
+                result.add(item);
+            }
+        } 
+    	return result;
+    }
+    
+    public Double get(Integer index){
+    	return this.collection.get(index);
+    }
 }
