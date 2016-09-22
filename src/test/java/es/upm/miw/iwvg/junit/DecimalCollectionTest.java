@@ -40,4 +40,11 @@ public class DecimalCollectionTest {
         assertEquals(3, this.dc.higher(), 10e-5);
     }
 
+    @Test
+    public void testGetNumbersLowerThan() {
+        DecimalCollection result = new DecimalCollection();
+        result.add(-1.0);
+        assertEquals(result.get(0), this.dc.getNumbersLowerThan().get(0));
+    }
+
 }
