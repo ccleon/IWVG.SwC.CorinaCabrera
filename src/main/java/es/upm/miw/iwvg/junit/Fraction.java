@@ -79,5 +79,12 @@ public class Fraction {
 			message = "Es igual";
 		return message;
 	}
+	
+	public Fraction timesFractions(Fraction times){
+		int numeratorResult = times.getNumerator() * this.numerator;
+		int denominatorResult = times.getDenominator() * this.denominator;
+		return new Fraction(numeratorResult, denominatorResult);
+		
+	}
 
 }

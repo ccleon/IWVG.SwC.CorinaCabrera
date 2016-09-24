@@ -71,4 +71,12 @@ public class FractionTest {
     	assertEquals("Es igual", Fraction.compareFractions(new Fraction(1,1), new Fraction(1,1))); 	
     }
 
+    @Test
+    public void testTimesFractions(){
+    	Fraction timesFraction = new Fraction(5, 2);
+    	Fraction result = f.timesFractions(timesFraction);
+        assertEquals(10, result.getNumerator());
+        assertEquals(6, result.getDenominator());
+    }
+
 }
